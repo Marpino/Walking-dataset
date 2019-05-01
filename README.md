@@ -7,7 +7,7 @@ The dataset is set in such a way:
 - There are 20 recordings of eldery people in the folder Dataset\Elderly and other 20 recordings of young people in the folder Dataset\Young, both the groups were asked to walk for 5 meters straight.
 
 - There is an additional folder with 
-1) a subfolder Marzia. Recordings of me walking 5 meters straight, in a rectagle of 5x3 meters and in a circle of diam 3.6 meters.
+1) a subfolder Marzi with recordings of me walking 5 meters straight, in a rectagle of 5x3 meters and in a circle of diam 3.6 meters.
 2) a subfolder Long Distance with recordings of me walking randomply in a corridor.
 3) a subfolder Disability with 2 recordings of a subject affected by legs muscolar atrophy, walking with sticks and leg braces.
 
