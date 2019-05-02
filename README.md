@@ -2,17 +2,16 @@
 This dataset is made of 20 IMUs recordings of people walking 5 meters. The IMUs are positioned on both legs in the foot-shank-thigh configuration. The subjects are 20 elderly people and 20 young people.
 
 # Dataset Organization
-The dataset is set in such a way:
+The dataset is set in this way:
 
-- There are 20 recordings of eldery people in the folder Dataset\Elderly and other 20 recordings of young people in the folder Dataset\Young, both the groups were asked to walk for 5 meters straight.
+- There are 20 recordings of eldery people in the folder \Dataset\Elderly and other 20 recordings of young people in the folder \Dataset\Young, both the groups were asked to walk for 5 meters straight.
 
-- There is an additional folder with 
-1) a subfolder Marzia with recordings of me walking 5 meters straight, in a rectagle of 5x3 meters and in a circle of diam 3.6 meters.
+- There is \Dataset\Additional folder to which belong: 
+1) a subfolder Marzia with recordings of me walking 5 meters straight, in a rectagle of 5x3 meters and in a circle of 3.6 meters diameter.
 2) a subfolder Long Distance with recordings of me walking randomly in a corridor.
 3) a subfolder Disability with 2 recordings of a subject affected by legs muscolar atrophy, walking with sticks and leg braces.
 
-- In each folder you can find the recordings in .xlsx format
-
+In each folder of \Dataset you can find the recordings in .xlsx format
 There are 7 sensors and each one corresponds to a part of the body:
 _1 right foot
 _2 right shank
@@ -50,14 +49,13 @@ RIGHT LEG=[0 0 1; 0 1 0; -1 0 0];
 LEFT LEG=[0 0 -1; 0 -1 0; -1 0 0];
 
 # Additional Data
-There is an additional folder EstimatedData, with each subfolder corresponding to the dataset.
+There is an additional folder \EstimatedData, with each subfolder corresponding to the dataset.
 Inside each subfolder there are 3 files .mat and 7 files .csv and additional files .fig that are matlab plots
-- angularRate: scaled,filtered and rotated;
+- angularRate: scaled, filtered and rotated;
 - specificForce: scaled, filtered and rotated; (it is the pure accelerometer output, gravity included)
 - orientation (roll,pitch and yaw): estimated;
 - position (x,y,z): estimated;
 - linear velocity magnitude: estimated;
 - zupt(zero velocity update): it is 1 when the foot is supposed to have zero velocity and 0 when the foot is moving;
-- T=gyro(k)'*gyro(k)/sigmaG^2+acc(k)'*acc(k)/sigmaA^2. 
-	Check if the test statistics T are below the detector threshold. If so, chose the hypothesis that the system has zero velocity.
+- T=gyro(k)'*gyro(k)/sigmaG^2+acc(k)'*acc(k)/sigmaA^2. Check if the test statistics T are below the detector threshold. If so, chose the hypothesis that the system has zero velocity.
 
