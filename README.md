@@ -7,8 +7,8 @@ The dataset is set in such a way:
 - There are 20 recordings of eldery people in the folder Dataset\Elderly and other 20 recordings of young people in the folder Dataset\Young, both the groups were asked to walk for 5 meters straight.
 
 - There is an additional folder with 
-1) a subfolder Marzi with recordings of me walking 5 meters straight, in a rectagle of 5x3 meters and in a circle of diam 3.6 meters.
-2) a subfolder Long Distance with recordings of me walking randomply in a corridor.
+1) a subfolder Marzia with recordings of me walking 5 meters straight, in a rectagle of 5x3 meters and in a circle of diam 3.6 meters.
+2) a subfolder Long Distance with recordings of me walking randomly in a corridor.
 3) a subfolder Disability with 2 recordings of a subject affected by legs muscolar atrophy, walking with sticks and leg braces.
 
 - In each folder you can find the recordings in .xlsx format
@@ -22,7 +22,7 @@ _5 left shank
 _6 left foot
 (_7 back, but it is not syncronized with the other sensors and in some recordings is not available)
 
-The reliable information are:
+The useful information are:
 
 - Acc_read_x linear acceleration along x 
 - Acc_read_y linear acceleration along y
@@ -31,11 +31,6 @@ The reliable information are:
 - Gyro_read_x angular velocity x 
 - Gyro_read_y angular velocity y 
 - Gyro_read_z angular velocity z 
-
-- Qua_read_w
-- Qua_read_x
-- Qua_read_y
-- Qua_read_z
 
 - Ext1 pressure toe
 - Ext2 pressure heel
@@ -48,8 +43,7 @@ acc=(acc/10000)*gravity
 gyro=(gyro/100)*pi/180
 
 FILTER
-Taking into account that the sampling frequency is 100
-- low pass filter to remove the noise with the cut off frequency around 3 Hz
+Taking into account that the sampling frequency is 100 apply a low pass filter to remove the noise with the cut off frequency around 3 Hz
 
 ROTATE
 RIGHT LEG=[0 0 1; 0 1 0; -1 0 0];
